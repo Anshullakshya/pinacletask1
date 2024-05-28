@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a692e1c39f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="contain">
+        <video id="backgroundVideo" autoplay loop muted playsinline>
+            <source src="[4K] Nature Rain Video  _ Free stock footage _  Free HD Videos - No Copyright.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div class="container">
+        <div class="weather__header">
+            <form class="weather__search">
+                <input type="text" placeholder="Search for a city..." class="weather__searchform">
+                <button type="submit" class="weather__searchbutton"><i class="fas fa-search"></i></button>
+            </form> 
+            <div class="weather__units">
+                <span class="weather_unit_celsius">&#176C</span>
+                <span class="weather_unit_fahrenheit">&#176F</span>
+            </div>
+        </div>
+        <div class="weather__body">
+            <h1 class="weather__city">City Name</h1>
+            <div class="weather__datetime">Date and Time</div>
+            <div class="weather__forecast">Weather Forecast</div>
+            <div class="weather__icon">
+                <img src="img1.jpg" alt="Weather Icon">
+            </div>
+            <p class="weather__temperature">Temperature</p>
+            <div class="weather__minmax">
+                <p>Min: <span class="weather__min">12&#176</span></p>
+                <p>Max: <span class="weather__max">16&#176</span></p>
+            </div>
+        </div>
+
+        <div class="weather__info">
+            <div class="weather__card">
+                <i class="fas fa-thermometer-three-quarters"></i>
+                <div>
+                    <p>Real Feel</p>
+                    <p class="weather__realfeel">29&#176</p>
+                </div>
+            </div>
+            <div class="weather__card">
+                <i class="fas fa-water"></i>
+                <div>
+                    <p>Humidity</p>
+                    <p class="weather__humidity">60%</p>
+                </div>
+            </div>
+          
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
